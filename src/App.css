@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+h3,
+h4 {
+  margin: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.icon {
+  margin: 20px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: flex-end;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.material-icons {
+  border: 0px;
+  background-color: transparent;
+  color: grey;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cards-view {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.list-view {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.card {
+  width: 30%;
+  background-color: #afaaaa53;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 50px;
+  box-shadow: 0px 3px 3px 3px rgba(0, 0, 0, 0.25);
 }
 
-.App-link {
-  color: #61dafb;
+.item {
+  background-color: #afaaaa53;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-image {
+  width: 70%;
+  display: flex;
+}
+
+.item-image {
+  width: 150px;
+}
+
+.item-header,
+.card-header {
+  text-transform: uppercase;
+  font-size: x-large;
+  font-weight: 400;
+}
+
+.item-color,
+.card-color {
+  text-transform: lowercase;
+  font-size: small;
+  font-weight: 400;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.item-price,
+.card-price {
+  margin-left: 20px;
+  color: red;
+}
+
+.item-add-button,
+.card-add-button {
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: 400;
+  color: red;
+  border: 1px solid red;
+  border-radius: 25px;
+  padding: 10px;
+  margin-right: 20px;
 }
